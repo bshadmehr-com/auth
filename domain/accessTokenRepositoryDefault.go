@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
+	"github.com/bshadmehr-com/libs/errs"
+	"github.com/bshadmehr-com/libs/logger"
 	"github.com/go-redis/redis/v8"
 	"github.com/golang-jwt/jwt"
-	"github.com/golang-trading-signal/libs/errs"
-	"github.com/golang-trading-signal/libs/logger"
 )
 
 var ctx = context.Background()

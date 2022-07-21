@@ -3,7 +3,7 @@ package utils
 import (
 	"unicode"
 
-	"github.com/golang-trading-signal/libs/errs"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
 func ValidatePassword(p string) *errs.AppError {

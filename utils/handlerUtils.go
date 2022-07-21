@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/golang-trading-signal/libs/errs"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
 func WriteResponse(w http.ResponseWriter, code int, data interface{}, err *errs.AppError) {

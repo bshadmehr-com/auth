@@ -8,13 +8,13 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/golang-trading-signal/libs/errs"
+	"github.com/bshadmehr-com/auth/app"
+	"github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/dto"
+	"github.com/bshadmehr-com/auth/mocks/service"
+	"github.com/bshadmehr-com/libs/errs"
 	"github.com/golang/mock/gomock"
 	"github.com/gorilla/mux"
-	"gitlab.com/bshadmehr76/vgang-auth/app"
-	"gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/dto"
-	"gitlab.com/bshadmehr76/vgang-auth/mocks/service"
 )
 
 var router *mux.Router

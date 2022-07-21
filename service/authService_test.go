@@ -3,13 +3,13 @@ package service_test
 import (
 	"testing"
 
-	"github.com/golang-trading-signal/libs/errs"
+	mainDomain "github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/dto"
+	"github.com/bshadmehr-com/auth/mocks/domain"
+	"github.com/bshadmehr-com/auth/service"
+	"github.com/bshadmehr-com/auth/utils"
+	"github.com/bshadmehr-com/libs/errs"
 	"github.com/golang/mock/gomock"
-	mainDomain "gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/dto"
-	"gitlab.com/bshadmehr76/vgang-auth/mocks/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/service"
-	"gitlab.com/bshadmehr76/vgang-auth/utils"
 )
 
 var mockUserRepo *domain.MockUserRepository

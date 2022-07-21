@@ -3,7 +3,7 @@ package utils
 import (
 	"net/mail"
 
-	"github.com/golang-trading-signal/libs/errs"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
 func ValidateEmail(email string) *errs.AppError {

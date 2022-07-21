@@ -3,7 +3,7 @@ package utils
 import (
 	"time"
 
-	"github.com/golang-trading-signal/libs/errs"
+	"github.com/bshadmehr-com/libs/errs"
 	"github.com/pquerna/otp/totp"
 )
 

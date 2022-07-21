@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/golang-trading-signal/libs/errs"
-	"github.com/golang-trading-signal/libs/logger"
+	"github.com/bshadmehr-com/auth/tasks"
+	"github.com/bshadmehr-com/libs/errs"
+	"github.com/bshadmehr-com/libs/logger"
 	"github.com/hibiken/asynq"
-	"gitlab.com/bshadmehr76/vgang-auth/tasks"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"

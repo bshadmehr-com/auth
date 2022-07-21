@@ -4,11 +4,11 @@ import (
 	"context"
 	"net/http"
 
+	"github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/utils"
+	"github.com/bshadmehr-com/libs/errs"
 	"github.com/golang-jwt/jwt"
-	"github.com/golang-trading-signal/libs/errs"
 	"github.com/gorilla/mux"
-	"gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/utils"
 )
 
 type AuthMiddleware struct {

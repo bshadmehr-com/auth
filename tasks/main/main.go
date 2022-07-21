@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
+	"github.com/bshadmehr-com/auth/tasks"
 	"github.com/hibiken/asynq"
-	"gitlab.com/bshadmehr76/vgang-auth/tasks"
 )
 
 const redisAddr = "redis:6379"

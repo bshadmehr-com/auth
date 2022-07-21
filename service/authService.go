@@ -1,13 +1,13 @@
 package service
 
 import (
-	"github.com/golang-trading-signal/libs/errs"
-	"gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/dto"
-	"gitlab.com/bshadmehr76/vgang-auth/utils"
+	"github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/dto"
+	"github.com/bshadmehr-com/auth/utils"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
-//go:generate mockgen -destination=../mocks/service/mockAuthService.go -package=service gitlab.com/bshadmehr76/vgang-auth/service AuthService
+//go:generate mockgen -destination=../mocks/service/mockAuthService.go -package=service github.com/bshadmehr-com/auth/service AuthService
 type AuthService interface {
 	Login(dto.LoginRequest) (*dto.LoginResponse, *errs.AppError)
 	Signup(dto.SignupRequest) (*dto.SignupResponse, *errs.AppError)

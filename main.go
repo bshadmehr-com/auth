@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/golang-trading-signal/libs/logger"
-	"gitlab.com/bshadmehr76/vgang-auth/app"
+	"github.com/bshadmehr-com/auth/app"
+	"github.com/bshadmehr-com/libs/logger"
 )
 
 func main() {

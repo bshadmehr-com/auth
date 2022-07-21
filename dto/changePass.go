@@ -1,8 +1,8 @@
 package dto
 
 import (
-	"github.com/golang-trading-signal/libs/errs"
-	"gitlab.com/bshadmehr76/vgang-auth/utils"
+	"github.com/bshadmehr-com/auth/utils"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
 type ChangePassRequest struct {

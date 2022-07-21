@@ -3,7 +3,7 @@ package dto_test
 import (
 	"testing"
 
-	"gitlab.com/bshadmehr76/vgang-auth/dto"
+	"github.com/bshadmehr-com/auth/dto"
 )
 
 func Test_change_password_sould_fail_when_password_length_is_less_than_6(t *testing.T) {

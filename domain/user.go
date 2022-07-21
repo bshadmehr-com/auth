@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/bshadmehr-com/libs/errs"
 	"github.com/golang-jwt/jwt"
-	"github.com/golang-trading-signal/libs/errs"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -22,7 +22,7 @@ type User struct {
 	SecretKey string `db:"secret_key"`
 }
 
-//go:generate mockgen -destination=../mocks/domain/mockUserRepository.go -package=domain gitlab.com/bshadmehr76/vgang-auth/domain UserRepository
+//go:generate mockgen -destination=../mocks/domain/mockUserRepository.go -package=domain github.com/bshadmehr-com/auth/domain UserRepository
 type UserRepository interface {
 	GetUserByUserEmail(string) (*User, *errs.AppError)
 	CreateUser(string, string, string, string) (int64, *errs.AppError)

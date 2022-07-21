@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/golang-trading-signal/libs/errs"
-	"gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/dto"
-	"gitlab.com/bshadmehr76/vgang-auth/service"
-	"gitlab.com/bshadmehr76/vgang-auth/utils"
+	"github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/dto"
+	"github.com/bshadmehr-com/auth/service"
+	"github.com/bshadmehr-com/auth/utils"
+	"github.com/bshadmehr-com/libs/errs"
 )
 
 type AuthHandler struct {

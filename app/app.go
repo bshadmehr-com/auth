@@ -7,13 +7,13 @@ import (
 	"os"
 	"time"
 
+	"github.com/bshadmehr-com/auth/domain"
+	"github.com/bshadmehr-com/auth/service"
 	"github.com/didip/tollbooth"
 	"github.com/go-redis/redis/v8"
 	"github.com/gorilla/mux"
 	"github.com/hibiken/asynq"
 	"github.com/jmoiron/sqlx"
-	"gitlab.com/bshadmehr76/vgang-auth/domain"
-	"gitlab.com/bshadmehr76/vgang-auth/service"
 )
 
 func setupMode() {

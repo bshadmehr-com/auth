@@ -4,9 +4,9 @@ import (
 	"os"
 	"time"
 
+	"github.com/bshadmehr-com/libs/errs"
+	"github.com/bshadmehr-com/libs/logger"
 	"github.com/golang-jwt/jwt"
-	"github.com/golang-trading-signal/libs/errs"
-	"github.com/golang-trading-signal/libs/logger"
 )
 
 type AccessToken struct {
@@ -16,7 +16,7 @@ type AccessToken struct {
 	ExpiresAt    int64
 }
 
-//go:generate mockgen -destination=../mocks/domain/mockAccessTokenRepository.go -package=domain gitlab.com/bshadmehr76/vgang-auth/domain AccessTokenRepository
+//go:generate mockgen -destination=../mocks/domain/mockAccessTokenRepository.go -package=domain github.com/bshadmehr-com/auth/domain AccessTokenRepository
 type AccessTokenRepository interface {
 	IsAuthorized(token AccessToken, route string, vars map[string]string) (bool, *jwt.MapClaims)
 	Logout(token AccessToken) *errs.AppError
